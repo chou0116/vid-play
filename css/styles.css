@@ -1,0 +1,172 @@
+/* Importing lemonada font from google fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Lemonada');
+
+/* Styling the background color */
+
+body {
+	background: #494f59;
+}
+
+/* Positioning the container that has the video player, video controls and playlist */
+
+.carton {
+	width: 1070px;
+	background: orange;
+	display: block;
+	margin: 0 auto;
+	margin-top: 7%;
+}
+
+/* Styling the video player container */
+
+.video-player-container {
+	display: inline-block;
+	width: 820px;
+	float: left;
+}
+
+/* Styling the actual video player */
+
+#video-player {
+	display: block;
+	margin: 0 auto;
+	width: 820px;
+	/*border: 2px solid red;*/
+}
+
+/* Styling present states for the buttons */
+
+button {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	float: left;
+	border: none;
+	border-radius: 25px;
+	margin-left: 15px;
+	margin-top: 0px;
+	background: #dedede;
+	border: 2px solid #ededed;
+	transition: background 0.5s 0.1s;
+}
+
+/* Styling hover states for the buttons */
+
+button:hover {
+	cursor: pointer;
+	background: #e24f23;
+	border: 2px solid #e24f23;
+	transition: background 0.5s 0.1s, border 0.5s 0.1s;
+}
+
+/* Styling th video controls panel */
+
+.video-controls {
+	box-sizing: border-box;
+	display: block;
+	background: #ededed;
+	min-width: 100px;
+	height: 80px;
+	padding-top: 10px;
+	border-top: 10px solid #e24f23;
+	border-bottom-left-radius: 2px;
+}
+
+/* Styling active states for the buttons */
+
+button:active {
+	cursor: pointer;
+	background: orange;
+	border: 2px solid orange;
+	transition: background 0.1s, border 0.1s;
+}
+
+/* Styling hover states for the play, pause, sound and mute icons */
+
+button:hover .fa-play {
+	color: white;
+	transition: color 0.5s 0.1s;
+}
+button:hover .fa-volume-off {
+	color: white;
+	transition: color 0.5s 0.1s;
+}
+button:hover .fa-pause {
+	color: white;
+	transition: color 0.5s 0.1s;
+}
+button:hover .fa-volume-up {
+	color: white;
+	transition: color 0.5s 0.1s;
+}
+.video-list:hover {
+	cursor: pointer;
+}
+i {
+	color: #e24f23;
+}
+.fa-pause {
+	margin-left: 0px;
+}
+.fa-play {
+	margin-left: 2.5px;
+}
+
+/* Styling the video playlist */
+
+#video-play-list {
+	background: #172c34;
+	width: 250px;
+	height: 542.3px;
+	display: block;
+	float: left;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+/* Styling the playlist heading */
+
+h2 {
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: -20px;
+	font-family: 'Lemonada', cursive;
+	color: #e24f23;
+	background: white;
+	border-bottom: 3px solid #e24f23;
+}
+
+/* Styling each item in the video playlist */
+
+.video-list-item {
+	width: 100px;
+	height: 100px;
+	list-style-type: none;
+}
+.video-list {
+	height: 350px;
+	margin: 0 auto;
+}
+li {
+	display: block;
+	margin-top: 40px;
+	margin-left: -25px;
+}
+#sound_button {
+	margin-left: -2.5px;
+}
+img {
+	box-sizing: border-box;
+	width: 220px;
+	opacity: 0.7;
+}
+img:hover {
+	opacity: 1;
+	transition: opacity 0.5s 0.1s;
+	box-shadow: 1px 1px 5px 2px white;
+}
+.thumb1,
+.thumb2 {
+	border-radius: 2px;
+}
